@@ -1,6 +1,6 @@
 public class Truck {
 
-    private String modelName;
+    private final String modelName;
     private final int wheelsCount;
 
     public Truck(String modelName, int wheelsCount) {

@@ -1,6 +1,6 @@
 public class Bicycle {
 
-    private String modelName;
+    private final String modelName;
     private final int wheelsCount;
 
     public Bicycle(String modelName, int wheelsCount) {
