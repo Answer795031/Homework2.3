@@ -1,4 +1,4 @@
-public class Car {
+public class Car implements CarService {
 
     private final String modelName;
     private final int wheelsCount;
@@ -16,10 +16,12 @@ public class Car {
         return wheelsCount;
     }
 
+    @Override
     public void updateTyre() {
         System.out.println("Меняем покрышку");
     }
 
+    @Override
     public void checkEngine() {
         System.out.println("Проверяем двигатель");
     }

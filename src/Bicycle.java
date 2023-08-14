@@ -1,4 +1,4 @@
-public class Bicycle {
+public class Bicycle implements BicycleService {
 
     private final String modelName;
     private final int wheelsCount;
@@ -16,6 +16,7 @@ public class Bicycle {
         return wheelsCount;
     }
 
+    @Override
     public void updateTyre() {
         System.out.println("Меняем покрышку");
     }
